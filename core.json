@@ -1,5 +1,5 @@
 {
-   "wfswarm":[
+   "wildfly-swarm":[
       {
          "groupId":"org.wildfly.swarm",
          "artifactId":"bom-all",
@@ -24,7 +24,7 @@
          "version":"3.5.0"
       }
    ],
-   "springboot":[
+   "spring-boot":[
       {
          "groupId":"org.springframework.boot",
          "artifactId":"spring-boot-starter"
