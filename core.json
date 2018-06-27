@@ -12,7 +12,7 @@
          "scope":"provided"
       }
    ],
-   "vertx":[
+   "vert.x":[
       {
          "groupId":"io.vertx",
          "artifactId":"vertx-core",
