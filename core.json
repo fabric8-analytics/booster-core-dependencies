@@ -3,7 +3,9 @@
       {
          "groupId":"org.wildfly.swarm",
          "artifactId":"bom-all",
-         "version":"2018.5.0"
+         "version":"2018.5.0",
+         "scope":"import",
+         "type":"pom"
       },
       {
          "groupId":"javax",
