@@ -51,11 +51,13 @@
     "spring-boot":[
         {
             "groupId":"org.springframework.boot",
-            "artifactId":"spring-boot-starter"
+            "artifactId":"spring-boot-starter",
+            "version": "1.5.14.RELEASE"
         },
         {
             "groupId":"org.springframework.boot",
             "artifactId":"spring-boot-starter-test",
+            "version": "1.5.14.RELEASE",
             "scope":"test"
         }
     ]
