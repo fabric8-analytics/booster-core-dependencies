@@ -26,6 +26,28 @@
          "version":"3.5.0"
       }
    ],
+   "vert.x-build": { 
+      "plugins": {
+        "plugin": {
+            "groupId": "io.fabric8",
+            "artifactId": "vertx-maven-plugin",
+            "version": "${vertx-maven-plugin.version}",
+            "executions": {
+                "execution": {
+                    "id": "vmp",
+                    "goals": [
+                        {"goal": "initialize"},
+                        {"goal": "package"},
+                    ]
+                }
+            },
+            "configuration": {
+                "redeploy": "true"
+            }
+        }
+    }
+}
+
    "spring-boot":[
       {
          "groupId":"org.springframework.boot",
