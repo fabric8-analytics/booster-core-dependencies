@@ -1,62 +1,62 @@
 {
-   "wildfly-swarm":[
-      {
-         "groupId":"org.wildfly.swarm",
-         "artifactId":"bom-all",
-         "version":"2018.5.0",
-         "scope":"import",
-         "type":"pom"
-      },
-      {
-         "groupId":"javax",
-         "artifactId":"javaee-api",
-         "version":"7.0",
-         "scope":"provided"
-      }
-   ],
-   "vert.x":[
-      {
-         "groupId":"io.vertx",
-         "artifactId":"vertx-core",
-         "version":"3.5.0"
-      },
-      {
-         "groupId":"io.vertx",
-         "artifactId":"vertx-unit",
-         "version":"3.5.0"
-      }
-   ],
-   "vert.x-build": { 
-      "plugins": {
-        "plugin": {
-            "groupId": "io.fabric8",
-            "artifactId": "vertx-maven-plugin",
-            "version": "${vertx-maven-plugin.version}",
-            "executions": {
-                "execution": {
-                    "id": "vmp",
-                    "goals": [
-                        {"goal": "initialize"},
-                        {"goal": "package"},
-                    ]
+    "wildfly-swarm":[
+        {
+            "groupId":"org.wildfly.swarm",
+            "artifactId":"bom-all",
+            "version":"2018.5.0",
+            "scope":"import",
+            "type":"pom"
+        },
+        {
+            "groupId":"javax",
+            "artifactId":"javaee-api",
+            "version":"7.0",
+            "scope":"provided"
+        }
+    ],
+    "vert.x":[
+        {
+            "groupId":"io.vertx",
+            "artifactId":"vertx-core",
+            "version":"3.5.0"
+        },
+        {
+            "groupId":"io.vertx",
+            "artifactId":"vertx-unit",
+            "version":"3.5.0"
+        }
+    ],
+    "vert.x-build": { 
+        "plugins": {
+            "plugin": {
+                "groupId": "io.fabric8",
+                "artifactId": "vertx-maven-plugin",
+                "version": "${vertx-maven-plugin.version}",
+                "executions": {
+                    "execution": {
+                        "id": "vmp",
+                        "goals": [
+                            {"goal": "initialize"},
+                            {"goal": "package"}
+                        ]
+                    }
+                },
+                "configuration": {
+                    "redeploy": "true"
                 }
-            },
-            "configuration": {
-                "redeploy": "true"
             }
         }
-    }
-},
+    },
 
-   "spring-boot":[
-      {
-         "groupId":"org.springframework.boot",
-         "artifactId":"spring-boot-starter"
-      },
-      {
-         "groupId":"org.springframework.boot",
-         "artifactId":"spring-boot-starter-test",
-         "scope":"test"
-      }
-   ]
+    "spring-boot":[
+        {
+            "groupId":"org.springframework.boot",
+            "artifactId":"spring-boot-starter"
+        },
+        {
+            "groupId":"org.springframework.boot",
+            "artifactId":"spring-boot-starter-test",
+            "scope":"test"
+        }
+    ]
 }
