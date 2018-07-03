@@ -29,9 +29,10 @@
     "vert.x-build": { 
         "plugins": {
             "plugin": {
-                "groupId": "io.fabric8",
+                                "version": "1.0.15",
                 "artifactId": "vertx-maven-plugin",
-                "version": "1.0.15",
+                                "groupId": "io.reactiverse",
+
                 "executions": {
                     "execution": {
                         "id": "vmp",
