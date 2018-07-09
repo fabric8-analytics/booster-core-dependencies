@@ -74,5 +74,18 @@
             "version": "1.5.14.RELEASE",
             "scope":"test"
         }
-    ]
+    ],
+    "spring-boot-build": {
+        "plugins": {
+            "plugin": {
+                "groupId": "org.springframework.boot",
+                "artifactId": "spring-boot-maven-plugin",
+                "executions": {
+                    "execution": {
+                        "goals": { "goal": "repackage" }
+                    }
+                }
+            }
+        }
+    }
 }
