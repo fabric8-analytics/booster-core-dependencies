@@ -14,6 +14,20 @@
             "scope":"provided"
         }
     ],
+    "wildfly-swarm-build": {
+        "plugins": {
+            "plugin": {
+                "groupId": "org.wildfly.swarm",
+                "artifactId": "wildfly-swarm-plugin",
+                "version": "2018.5.0",
+                "executions": {
+                    "execution": {
+                        "goals": { "goal": "package" }
+                    }
+                }
+            }
+        }
+    },
     "vert.x":[
         {
             "groupId":"io.vertx",
@@ -29,10 +43,9 @@
     "vert.x-build": { 
         "plugins": {
             "plugin": {
-                                "version": "1.0.15",
+                "version": "1.0.15",
                 "artifactId": "vertx-maven-plugin",
-                                "groupId": "io.reactiverse",
-
+                "groupId": "io.reactiverse",
                 "executions": {
                     "execution": {
                         "id": "vmp",
